@@ -1,0 +1,15 @@
+{%extends "base.html"%}
+
+{% block content%}
+
+<div class="container">
+    <h1>DJ Travels</h1>
+    <form action="{{url_for('output')}}" method="POST">
+        <input type="text" name="origin" placeholder="Enter origin"><br>
+        <input type="text" name="destination" placeholder="Enter destination"><br>
+        <input type="submit">
+    </form>
+</div>
+
+
+{% endblock content%}
