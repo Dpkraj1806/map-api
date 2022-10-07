@@ -1,61 +1,28 @@
 {%extends "base.html"%}
 
 {%block content%}
-<a href="/">Home</a>
 <div class="output">
-    <h2>Details</h2>
+    <h2>Travel Details</h2>
     <div class="desti row">
-        <div class="col-left"> Destination : </div>
-        <div class="col-right">{{responses['destination_addresses'][0]}}</div>
+        <div class="col-left"> Destination&nbsp:&nbsp</div>
+        <div class="col-right">&nbsp{{responses[0]['destination_addresses'][0]}}</div>
     </div>
     <div class="orig row">
-        <div class="col-left"> Origin : </div>
-        <div class="col-right"> {{responses['origin_addresses'][0]}}</div>
+        <div class="col-left"> Origin&nbsp:&nbsp</div>
+        <div class="col-right">&nbsp{{responses[0]['origin_addresses'][0]}}</div>
     </div>
     <div class="distance row">
-        <div class="col-left"> Distance :</div>
-        <div class="col-right"> {{responses['rows'][0]['elements'][0]['distance']['text']}}</div>
+        <div class="col-left"> Distance&nbsp:</div>
+        <div class="col-right">&nbsp{{responses[0]['rows'][0]['elements'][0]['distance']['text']}}</div>
     </div>
     <div class="duration row">
-        <div class="col-left"> Duration :</div>
-        <div class="col-right">  {{responses['rows'][0]['elements'][0]['duration']['text']}}</div>
+        <div class="col-left"> Duration&nbsp:&nbsp</div>
+        <div class="col-right">&nbsp{{responses[0]['rows'][0]['elements'][0]['duration']['text']}}</div>
     </div>
 </div>
 
-<style>
-    .output{
-        border: 1px solid black;
-        background-color: rgb(209, 24, 55);
-        width: 400px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .desti{
-        color: whitesmoke;
-    }
-    .orig{
-        color: whitesmoke;
-    }
-    .distance{
-        color: whitesmoke;
-    }
-    .duration{
-        color: whitesmoke;
-    }
-    .row{
-        display: flex;
-        
-    }
-    .col-left{
-        flex-basis: 50%;
-        text-align: right;
-    }
-    .col-right{
-        flex-basis: 50%;
-        text-align: left;
-    }
-</style>
+<p>{{responses[1]["image_results"][1]["thumbnail"]}}</p>
+<img src="{{responses[1]['image_results'][1]['thumbnail']}}">
 
 
 {%endblock content%}
