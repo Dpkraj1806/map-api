@@ -1,15 +1,19 @@
-{%extends "base.html"%}
-
-{% block content%}
+{%extends "base.html"%} {% block content%}
 
 <div class="container">
-    <h1>DJ Travels</h1>
+  <div class="nav"><img src="../static/logo.jpg/" />  <h1 class="company_name">DJ Travels</h1>
+  </div>
+  <div class="banner">
     <form action="{{url_for('output')}}" method="POST">
-        <input type="text" name="origin" placeholder="Enter origin"><br>
-        <input type="text" name="destination" placeholder="Enter destination"><br>
-        <input type="submit">
+      <div class="origin">
+        <input type="text" name="origin" placeholder="From" />
+      </div>
+      <div class="destination">
+        <input type="text" name="destination" placeholder="To" />
+      </div>
+      <div class="submit"><input type="submit" value="Search" /></div>
     </form>
+  </div>
 </div>
-
 
 {% endblock content%}

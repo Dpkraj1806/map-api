@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    width: 100%;
+    height: 200px;
+    background-color: #d84f57;
+    padding: 1px;
+}
+.nav img {
+    width: 75px;
+    border-radius: 50%;
+    display: inline-flexbox;
+}
+
+.nav h1{
+margin-top: -10px;
+}
+
+.company_name {
+    display: inline-block;
+    font-size: 25px;
+    margin-top: -10px;
+}
+.container .banner{
+    width: 500px;
+        background-image: url(../static/banner.jpg);
+
+}
+form {
+    background-color: #d84f57;
+    width: 500px;
+    height: 40px;
+}
+
+.origin {
+    display: inline-block;
+    border: .5px solid grey;
+    width: 200px;
+    height: 30px;
+}
+
+.origin input {
+    width: 100%;
+    height: 100%;
+}
+
+.destination {
+    display: inline-block;
+    border: .5px solid grey;
+    width: 200px;
+    height: 30px;
+
+}
+
+.destination input {
+    width: 100%;
+    height: 100%;
+}
+
+.submit {
+    display: inline-block;
+}
+
+.submit input {
+    background-color: #d84f57;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+input {
+    border: 0px solid;
+    background-color: white;
+    
+}
