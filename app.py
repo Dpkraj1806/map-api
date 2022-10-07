@@ -14,7 +14,7 @@ def output():
     if request.method== "POST":
         origin=request.form['origin']
         destination=request.form['destination']
-        url="https://maps.googleapis.com/maps/api/distancematrix/json?origins="+origin+"&destinations="+destination+"&units=imperial&key=AIzaSyDLGe2lR-Q04Bqmef0WhiGjlXEA_zr1tQg"
+        url="https://maps.googleapis.com/maps/api/distancematrix/json?origins="+origin+"&destinations="+destination+"&units=imperial&key="
         response=requests.get(url)
         return render_template("output.html",responses=response.json())
 
