@@ -15,7 +15,7 @@
 
      input {
          margin: 10px;
-         background-color: transparent;
+         /* background-color: transparent; */
      }
 
      input:hover {
@@ -23,9 +23,9 @@
          size: 100px;
      }
 
-     .submit {
-         background-color: red;
-     }
+     .submit:hover{
+        border: 1px solid red;
+    }
 
      .flex-div {
          display: flex;
@@ -63,7 +63,9 @@
          padding-right: 40%;
          padding-top: 150px;
          background-image: url(../static/banner.jpg);
-         background-repeat: no-repeat, cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center;
          background-color: transparent;
          margin-left: 65px;
      }
