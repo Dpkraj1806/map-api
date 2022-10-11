@@ -14,7 +14,7 @@ def output():
     if request.method== "POST":
         origin=request.form['origin']
         destination=request.form['destination']
-        url="https://maps.googleapis.com/maps/api/distancematrix/json?origins="+origin+"&destinations="+destination+"&units=imperial&key=AIzaSyDLGe2lR-Q04Bqmef0WhiGjlXEA_zr1tQg"
+        url="https://maps.googleapis.com/maps/api/distancematrix/json?origins="+origin+"&destinations="+destination+"&units=imperial&key=[API-KEY]"
         response=requests.get(url)
         originimgurl="https://app.zenserp.com/api/v2/search?apikey=7e444ee0-462d-11ed-aa22-17c327ad7cbe&q="+origin+"&tbm=isch"
         destinationimgurl="https://app.zenserp.com/api/v2/search?apikey=7e444ee0-462d-11ed-aa22-17c327ad7cbe&q="+destination+"&tbm=isch"
